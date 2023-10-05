@@ -52,6 +52,14 @@
             font-size: 18px;
             margin-top: 20px;
         }
+        #download-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
         .footer {
 
             background-color: #3a3a3a;
@@ -85,9 +93,10 @@
     </div>
     <div id="number-plate">
         <img src="num-plate.jpeg" alt="number-plate" width="300" height="200">
+        <button id="download-button">Download Number Plate</button>
+
     </div>
-    <br>
-    
+
     <div class="footer">
         <div>© 2023 Govt. Of Telangana Transport Department.</div>
         
@@ -108,5 +117,23 @@
         ||
         <a href="https://www.transport.telangana.gov.in/html/statelinks.html">Other States Transport Departments Websites</a>
     </div>
+    <script>
+        const image = document.querySelector('#number-plate img');
+        const downloadButton = document.querySelector('#download-button');
+        image.addEventListener('click', () => {
+            downloadButton.style.display = 'block';
+        });
+        downloadButton.addEventListener('click', () => {
+ 
+            const link = document.createElement('a');
+            link.href = image.src;
+            link.download = 'number-plate.jpeg';
+            document.body.appendChild(link);
+            link.click();
+
+            document.body.removeChild(link);
+        });
+    </script>
+    
 </body>
 </html>
