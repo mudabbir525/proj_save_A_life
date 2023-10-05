@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="icon" type="jpg" href="https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Emblem_of_Telangana.svg/800px-Emblem_of_Telangana.svg.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #header {
+            background-color: #0c76af;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        #header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        #qr-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #qr-code {
+            width: 150px; 
+            height: 150px;
+        }
+
+        #scan-text {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .footer {
+
+            background-color: #3a3a3a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: rgb(0, 110, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Emblem_of_Telangana.svg/800px-Emblem_of_Telangana.svg.png" alt="Government of Telangana State Transport Department Logo">
+        <p>Government of Telangana State Transport Department</p>
+    </div> 
+    <div>
+        <h1>Road safety and Emergency </h1>
+    </div>
+    <div id="qr-container">
+        <img id="qr-code" src="qr.png" alt="QR Code">
+        <p id="scan-text">Scan this QR</p>
+        <p style="font-size: larger;">[ AND ]</p>
+    </div>
+    <div class="footer">
+        <div>© 2023 Govt. Of Telangana Transport Department.</div>
+        
+        Powered By
+        <a href="https://india.gov.in/" target="_blank">website security india.gov.in</a>
+        ||
+        <a href="https://www.telangana.gov.in/" target="_blank">Telangana State Portal</a>
+        ||
+        <a href="https://webcraft-solutions.netlify.app/about">Webcraft Solutions PVT.LTD</a>
+        <br>
+        <a href="https://www.transport.telangana.gov.in/html/terms-and-conditions.html">Terms and Conditions</a>
+        ||
+        <a href="https://www.transport.telangana.gov.in/html/privacy-policy.html">Privacy Policy</a>
+        ||
+        <a href="https://www.transport.telangana.gov.in/html/copyright-policy.html">Copyright Policy</a>
+        ||
+        <a href="https://www.transport.telangana.gov.in/html/hyperlinking-policies.html">Hyperlinking Policy</a>
+        ||
+        <a href="https://www.transport.telangana.gov.in/html/statelinks.html">Other States Transport Departments Websites</a>
+    </div>
+</body>
+</html>
